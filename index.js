@@ -13,8 +13,7 @@ import EnrollmentRoutes from './Kambaz/Enrollments/routes.js';
 const app = express()
 app.use(cors({
   credentials: true,
-  // origin: process.env.NETLIFY_URL || "http://localhost:5173" || "https://yiqianzhang-assignment5.netlify.app/",
-  origin: true,
+  origin: process.env.NETLIFY_URL || "http://localhost:5173",
 }
 )); 
 
